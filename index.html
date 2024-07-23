@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asif's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>FRONT-END WEB DEVELOPER</p>
+                <H1>Hi, I'm <span>Md Asif Farooqui,</span><br>an Engineer</H1>
+            </div>
+        </div>
+    </div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/ASIF.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I'm a dedicated and proficient Java Developer , 
+                    I possess a solid background in developing and deploying high-quality, scalable, and robust applications. 
+                    Additionally, I have substantial experience with AWS cloud services, enabling me to design and deploy cloud-based solutions effectively. 
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <!-- <p class="tab-links">Project</p> -->
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Java</span><br></li>
+                        <li><span>Amazon Web Services(AWS)</span><br></li>
+                        <li><span>Docker</span><br></li>
+                        <li><span>Shell Scripting</span><br></li>
+                        <li><span>HTML</span><br></li>
+                        <li><span>CSS</span><br></li>
+                        <li><span>JavaScript</span><br></li>
+                        <li><span>Git</span><br></li>
+                        <li><span>Linux</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-25<br></span>Bachelor of Engineering<br></li>
+                        <li><span>2018<br></span>Secondary Education(10th)<br></li>
+                        <li><span>2020<br></span>Secondary Education(12th)<br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+<div class="row">
+    <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p>beconbin@gmail.com</p>
+        <div class="social-icons">
+            <a href="https://github.com/MdAsifFarooqui"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/md-asif-farooqui-8b415326b/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="contact-right">
+
+    </div>
+</div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        // event.currentTarget.classList.add("active-link");
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
