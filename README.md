@@ -1,5 +1,5 @@
 # Portfolio-Website
-This portfolio website showcases my skills, projects, and experience as a front-end developer. Built using HTML, CSS, and JavaScript, it features a responsive design, interactive navigation, project gallery, and contact form. The site highlights my expertise in creating user-friendly and visually appealing web applications.
+This portfolio website showcases my skills,and experience as a front-end developer. Built using HTML, CSS, and JavaScript, it features a responsive design, interactive navigation, project gallery, and contact form. The site highlights my expertise in creating user-friendly and visually appealing web applications.
 **Features:**
 Responsive Design: Ensures optimal viewing on various devices, including desktops, tablets, and smartphones.
 Interactive Navigation: Smooth and intuitive navigation with a user-friendly menu.
